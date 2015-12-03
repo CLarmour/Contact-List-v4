@@ -1,18 +1,26 @@
-<h1>Home Page</h1>
+<div class="container">
+<h1>Contact App</h1>
 
-<button id="load_contacts">Load contacts</button><br>
 <br>
-<fieldset>
-  <legend>Add Contact</legend>
-  <input type="text" id="name" placeholder="Full Name"><br>
-  <input type="text" id="email" placeholder="Email"><br>
-  <input type="text" id="phone" placeholder="Phone"><br>
-  <button id="new_contact">Add Contact</button><br>
-</fieldset>
-<fieldset>
+<div class="col-md-4">
+<form id="add_contact">
+    <legend>Add Contact</legend>
+    <input type="text" id="name" placeholder="Full Name"><br>
+    <input type="text" id="email" placeholder="Email"><br>
+    <input type="text" id="phone" placeholder="Phone"><br>
+    <button id="new_contact">Add Contact</button><br>
+    <br>
+    <br>
+    <legend>Search Contacts</legend>
+<input type="text" id="search_contact" placeholder="Start typing.."><br>
+</form>
+</div>
+<!-- <fieldset>
 <legend>Search Contacts</legend>
-<input type="text" id="search_contact"><br>
-</fieldset>
+<input type="text" id="search_contact" placeholder="Start typing.."><br>
+</fieldset> -->
+<br>
+<button id="load_contacts">Load contacts</button><br>
 <br>
 <table id="contacts">
   <thead>
@@ -20,8 +28,10 @@
       <th>Name</th>
       <th>Email</th>
       <th>Phone Number</th>
+      <th>Modify</th>
     </tr>
   </thead>
     <tbody>
     </tbody>
 </table>
+</div>

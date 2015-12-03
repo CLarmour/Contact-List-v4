@@ -23,3 +23,13 @@ post '/new_contact' do
   results.to_json
 
 end
+
+delete '/contact/:email' do
+  results = {result: false}
+  email = params[:email]
+  contact = Contact.find_by email: email
+  contact.destroy
+  results[:result] = true
+  results[:email] = email
+  results.to_json
+end

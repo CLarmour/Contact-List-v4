@@ -2,23 +2,42 @@ h1 {
   font-family: Garamond, Helvetica, Arial;
 }
 
-table { 
-color: #333; /* Lighten up font color */
-font-family: Garamond, Helvetica, Arial, sans-serif; /* Nicer font */
-width: 640px; 
-border-collapse: 
-collapse; border-spacing: 0; 
+legend {
+  font-family: Garamond;
 }
 
-td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+button#load_contacts {
+  font-family: Garamond;
+}
+
+button#new_contact {
+  font-family: Garamond;
+}
+
+table { 
+  color: #333; /* Lighten up font color */
+  font-family: Garamond, Helvetica, Arial, sans-serif; /* Nicer font */
+  width: 640px; 
+  border-collapse: 
+  collapse; border-spacing: 0; 
+}
+
+td, th { 
+  border: 1px solid #CCC; 
+  height: 30px; 
+} /* Make cells a bit taller */
 
 th {
-text-align: center;
-background: #F3F3F3 ; /* Light grey background */
-font-weight: bold; /* Make sure they're bold */
+  text-align: center;
+  background: #F3F3F3 ; /* Light grey background */
+  font-weight: bold; /* Make sure they're bold */
 }
 
 td {
-background: #FAFAFA ; /* Lighter grey background */
-text-align: center; /* Center our text */
+  background: #FAFAFA ; /* Lighter grey background */
+  text-align: center; /* Center our text */
+}
+
+table#contacts {
+  margin-left: 25px;
 }
